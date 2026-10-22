@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ejercicio 2: Total de venta</title>
+  <link rel="stylesheet" href="css/style.css">
+
 
   <!--
     REQUISITO: vincula aquí tu propio archivo CSS.
@@ -42,37 +44,34 @@
   -->
 
   <form>
-    <p>
-      <label>Nombre del producto: <input type="text" placeholder="Nombre del producto"></label>
-    </p>
-    <p>
-      <label>Cantidad: <input type="number" placeholder="Cantidad"></label>
-    </p>
-    <p>
-      <label>Precio unitario: <input type="number" placeholder="Precio unitario"></label>
-    </p>
+    <label for="producto">Nombre del producto:</label>
+    <input type="text" id="producto" placeholder="Nombre del producto">
 
-    <p>
-      <button type="button">Calcular</button>
-    </p>
+    <label for="cantidad">Cantidad:</label>
+    <input type="number" id="cantidad" placeholder="Cantidad">
 
-    <p>
-      <label>Subtotal: <input type="text" placeholder="Subtotal" readonly></label>
-    </p>
-    <p>
-      <label>IVA: <input type="text" placeholder="IVA" readonly></label>
-    </p>
-    <p>
-      <label>Descuento: <input type="text" placeholder="Descuento" readonly></label>
-    </p>
-    <p>
-      <label>Total a pagar: <input type="text" placeholder="Total a pagar" readonly></label>
-    </p>
+    <label for="precio">Precio unitario:</label>
+    <input type="number" id="precio" placeholder="Precio unitario">
+
+    <button type="button" onclick="calcular()">Calcular</button>
+
+    <label for="subtotal">Subtotal:</label>
+    <input type="text" id="subtotal" placeholder="Subtotal" readonly>
+
+    <label for="iva">IVA:</label>
+    <input type="text" id="iva" placeholder="IVA" readonly>
+
+    <label for="descuento">Descuento:</label>
+    <input type="text" id="descuento" placeholder="Descuento" readonly>
+
+    <label for="total">Total a pagar:</label>
+    <input type="text" id="total" placeholder="Total a pagar" readonly>
   </form>
 
   <!--
     REQUISITO: vincula aquí tu propio archivo JS.
     Ejemplo: <script src="venta.js"></script>
   -->
+    <script src="js/venta.js"></script>
 </body>
 </html>

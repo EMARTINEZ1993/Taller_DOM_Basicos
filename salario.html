@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ejercicio 4: Salario de empleado</title>
+    <link rel="stylesheet" href="css/style.css">
+
 
   <!--
     REQUISITO: vincula aquí tu propio archivo CSS.
@@ -38,25 +40,22 @@
   -->
 
   <form>
-    <p>
-      <label>Horas trabajadas: <input type="number" placeholder="Horas trabajadas"></label>
-    </p>
-    <p>
-      <label>Valor por hora: <input type="number" placeholder="Valor por hora"></label>
-    </p>
+    <label for="horas">Horas trabajadas:</label>
+    <input type="number" placeholder="Horas trabajadas" id="horas">
 
-    <p>
-      <button type="button">Calcular salario</button>
-    </p>
+    <label for="valor">Valor por hora:</label>
+    <input type="number" placeholder="Valor por hora" id="valor">
 
-    <p>
-      <label>Salario a pagar: <input type="text" placeholder="Salario a pagar" readonly></label>
-    </p>
+    <button type="button" onclick="calcular()">Calcular salario</button>
+
+    <label for="resultado">Salario a pagar:</label>
+    <input type="text" placeholder="Salario a pagar" readonly id="resultado">
   </form>
 
   <!--
     REQUISITO: vincula aquí tu propio archivo JS.
     Ejemplo: <script src="salario.js"></script>
   -->
+    <script src="js/salario.js"></script>
 </body>
 </html>

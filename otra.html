@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ejercicio 5: Presupuesto de un evento</title>
+    <link rel="stylesheet" href="css/style.css">
+
 
   <!--
     REQUISITO: vincula aquí tu propio archivo CSS.
@@ -53,28 +55,25 @@
   -->
 
   <form>
-    <p>
-      <label>Número de invitados: <input type="number" placeholder="Número de invitados"></label>
-    </p>
-    <p>
-      <label>Costo de comida por invitado: <input type="number" placeholder="Costo de comida por invitado"></label>
-    </p>
-    <p>
-      <label>Costo de bebida por invitado: <input type="number" placeholder="Costo de bebida por invitado"></label>
-    </p>
-    <p>
-      <label>Costo de decoración: <input type="number" placeholder="Costo de decoración"></label>
-    </p>
-    <p>
-      <label>Costo de música/animación: <input type="number" placeholder="Costo de música/animación"></label>
-    </p>
-    <p>
-      <label>Propina para el personal (%): <input type="number" placeholder="Propina para el personal (%)"></label>
-    </p>
+    <label for="numero-inv">Número de invitados:</label>
+    <input type="number" placeholder="Número de invitados" id="numero-inv">
 
-    <p>
-      <button type="button">Calcular presupuesto</button>
-    </p>
+    <label for="cost-comida">Costo de comida por invitado:</label>
+    <input type="number" placeholder="Costo de comida por invitado" id="cost-comida">
+
+    <label for="cost-bebida">Costo de bebida por invitado:</label>
+    <input type="number" placeholder="Costo de bebida por invitado" id="cost-bebida">
+
+    <label for="cost-decor">Costo de decoración:</label>
+    <input type="number" placeholder="Costo de decoración" id="cost-decor">
+
+    <label for="cost-musica">Costo de música/animación:</label>
+    <input type="number" placeholder="Costo de música/animación" id="cost-musica">
+
+    <label for="propina-porc">Propina para el personal (%):</label>
+    <input type="number" placeholder="Propina para el personal (%)" id="propina-porc">
+
+    <button type="button" onclick="calcularPresupuesto()">Calcular presupuesto</button>
   </form>
 
   <h2>Detalle del presupuesto</h2>
@@ -88,35 +87,35 @@
     <tbody>
       <tr>
         <td>Comida total</td>
-        <td></td>
+        <td id="comida-total-s"></td>
       </tr>
       <tr>
         <td>Bebida total</td>
-        <td></td>
+        <td id="bebida-total-s"></td>
       </tr>
       <tr>
         <td>Decoración</td>
-        <td></td>
+        <td id="decoracion"></td>
       </tr>
       <tr>
         <td>Música/animación</td>
-        <td></td>
+        <td id="musica"></td>
       </tr>
       <tr>
         <td>Subtotal</td>
-        <td></td>
+        <td id="subtotal"></td>
       </tr>
       <tr>
         <td>Propina</td>
-        <td></td>
+        <td id="propina"></td>
       </tr>
       <tr>
         <td>Total general</td>
-        <td></td>
+        <td id="total-general"></td>
       </tr>
       <tr>
         <td>Costo por invitado</td>
-        <td></td>
+        <td id="costo-inv"></td>
       </tr>
     </tbody>
   </table>
@@ -125,5 +124,6 @@
     REQUISITO: vincula aquí tu propio archivo JS.
     Ejemplo: <script src="otra.js"></script>
   -->
+    <script src="js/otra.js"></script>
 </body>
 </html>
